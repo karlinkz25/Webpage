@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS  CONTACTS (
+    contact_id INTEGER PRIMARY KEY,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL
+);
+
+INSERT INTO contacts (first_name, last_name)
+VALUES ("Janez", "Novak");
+
+

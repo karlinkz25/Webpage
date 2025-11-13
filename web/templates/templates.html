@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <style>
+.login-button {
+    background-color: white;
+    color: #7b4ea3;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #7b4ea3;
+    color: white;
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #faf7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #c9a4e3;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #b88bdc;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #a578cf;
+            border-radius: 5px;
+        }
+
+        /* Hero sekcija - nova slika */
+        .hero {
+            background: linear-gradient(rgba(160, 120, 200, 0.45), rgba(160, 120, 200, 0.45)), 
+                        url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        .button {
+            background-color: #b88bdc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #a472cc;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            color: #7b4ea3;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #7b4ea3;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #c9a4e3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dobrodošli na naši spletni strani</h1>
+        <p>Nežna eleganca v vijoličnih tonih ✨</p>
+    </header>
+
+    <nav>
+        <a href="#">Domov</a>
+        <a href="#">O nas</a>
+        <a href="#">Galerija</a>
+        <a href="#">Kontakt</a>
+            <a href="/test" class="login-button">Prijava</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Ustvarjamo lepoto v preprostosti</h2>
+        <p><h1>{{ime_podjetja}}</h1></p>
+        <a href="#" class="button">Razišči več</a>
+    </section>
+
+    <main>
+        <h2>Naše storitve</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Spletno oblikovanje">
+                <h3>Spletno oblikovanje</h3>
+                <p></p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80" alt="Razvoj">
+                <h3>Razvoj</h3>
+                <p>Čist, učinkovit in sodoben razvoj spletnih strani.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80" alt="Podpora">
+                <h3>Podpora</h3>
+                <p>Zanesljiva pomoč in vzdrževanje za tvojo spletno prisotnost.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Moja Spletna Stran | Vsi podatki so zaščiteni 
+    </footer>
+
+</body>
+</html>
